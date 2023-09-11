@@ -1,7 +1,6 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-
 /**
  * main -print whether the number is positive or negative.
  *
@@ -9,21 +8,23 @@
  */
 int main(void)
 {
-	int n;
+int n;
 
-	strand(time(0));
-	n = rand() - RAND_MAX / 2;
+srand(time(NULL));
+n = rand() % 201 - 100;
+printf("The number %d ", n);
 if (n > 0)
 {
-printf("%d is positive\n", n);
+printf("is positive\n");
 }
 else if (n == 0)
 {
-printf("%d is zero\n", n);
+printf("is zero\n");
 }
 else
 {
-printf("%d is zero\n", n);
+printf("is negative\n");
 }
 return (0);
 }
+
