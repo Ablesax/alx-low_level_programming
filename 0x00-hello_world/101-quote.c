@@ -1,11 +1,11 @@
-#include <unistd.h>
 #include <stdio.h>
+#include <stdlib.h>
 /**
- * main - A c program that print to standard error
- * Return 1 (success)
+ * main - Aprogram that prints
+ * return 1 (success)
  */
 int main(void)
-{
-	fput("and that piece of art is useful\" - Dora Korpar, 2015-10-19\n", stdout);
+{fprintf(stderr, "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n");
 return (1);
 }
+
